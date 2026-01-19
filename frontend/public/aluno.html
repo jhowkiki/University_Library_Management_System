@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programa do Aluno</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <a href="/menu-aluno.html" class="small">⬅ Voltar</a>
+
+    <h1>Programa do Aluno</h1>
+
+    <!-- CADASTRO -->
+    <section>
+      <h2>Cadastro de Aluno</h2>
+
+      <form id="studentForm">
+        <div class="form-row">
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" required>
+          </div>
+
+          <div class="field">
+            <label for="ra">RA</label>
+            <input id="ra" type="text" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" type="email">
+          </div>
+
+          <div class="field" style="flex:0.6">
+            <label>&nbsp;</label>
+            <button type="submit">Cadastrar</button>
+          </div>
+        </div>
+      </form>
+
+      <div id="studentMessage"></div>
+    </section>
+
+    <hr>
+
+    <!-- LIVROS DISPONÍVEIS -->
+    <section>
+      <h2>Livros Disponíveis</h2>
+      <button id="btnLivros">Atualizar lista</button>
+
+      <table id="livrosTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Autor</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+  </div>
+
+  <script src="/js/aluno.js"></script>
+</body>
+</html>

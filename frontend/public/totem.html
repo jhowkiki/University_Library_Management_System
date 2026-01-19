@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Totem de Autoatendimento</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <a href="/menu-aluno.html" class="small">⬅ Voltar</a>
+    <h1>Totem de Empréstimo</h1>
+
+    <section>
+      <h2>Retirada de Livro</h2>
+      <form id="retiradaForm">
+        <div class="form-row">
+          <input id="raRetirada" name="ra" type="text" placeholder="RA" required />
+          <input id="bookIdRetirada" name="book_id" type="number" placeholder="ID do Livro" required />
+          <button type="submit">Retirar</button>
+        </div>
+      </form>
+      <div id="retiradaMessage" class="box"></div>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Devolução de Livro</h2>
+      <form id="devolucaoForm">
+        <div class="form-row">
+          <input id="raDevolucao" name="ra" type="text" placeholder="RA" required />
+          <input id="bookIdDevolucao" name="book_id" type="number" placeholder="ID do Livro" required />
+          <button type="submit" class="secondary">Devolver</button>
+        </div>
+      </form>
+      <div id="devolucaoMessage" class="box"></div>
+    </section>
+  </div>
+
+  <script src="/js/totem.js"></script>
+</body>
+</html>

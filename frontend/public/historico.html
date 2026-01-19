@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Histórico Geral</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <a href="/menu-bibliotecario.html" class="small">⬅ Voltar</a>
+
+    <h1>Histórico de Empréstimos</h1>
+    <p class="small">Apenas para consulta do bibliotecário.</p>
+
+    <button id="btnAtualizar">Atualizar</button>
+
+    <table id="tabelaHistorico">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Aluno</th>
+          <th>RA</th>
+          <th>Livro</th>
+          <th>Retirada</th>
+          <th>Devolução</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="/js/historico.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gerenciamento de Livros</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <a href="/menu-bibliotecario.html" class="small">⬅ Voltar ao menu</a>
+
+    <h1>Gerenciamento de Livros</h1>
+
+    <!-- CADASTRO DE LIVROS -->
+    <section>
+      <h2>Cadastrar Livro</h2>
+
+      <form id="bookForm">
+        <div class="form-row">
+          <div class="field">
+            <label for="titulo">Título</label>
+            <input id="titulo" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="autor">Autor</label>
+            <input id="autor" type="text" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="isbn">ISBN</label>
+            <input id="isbn" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="quantidade">Quantidade</label>
+            <input id="quantidade" type="number" min="1" value="1" />
+          </div>
+        </div>
+
+        <button type="submit">Cadastrar Livro</button>
+      </form>
+
+      <div id="bookMessage"></div>
+    </section>
+
+    <hr>
+
+    <!-- LISTA DE LIVROS -->
+    <section>
+      <h2>Livros Cadastrados</h2>
+      <button id="refreshBooks">Atualizar lista</button>
+
+      <table id="booksTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+  </div>
+
+  <script src="/js/bibliotecario.js"></script>
+</body>
+</html>
